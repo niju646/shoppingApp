@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:shoppingapp/screens/splashScreen.dart';
+import 'package:shoppingapp/screens/navigation_screen.dart';
+import 'package:shoppingapp/screens/signupscreen.dart';
+
 
 main(){
   runApp(MyApp());
@@ -16,7 +18,7 @@ class MyApp extends StatelessWidget {
       theme: ThemeData(
         primaryColor: Colors.red
       ),
-      home: SplashScreen(),
+      home: NavigationScreen(),
     );
   }
 }

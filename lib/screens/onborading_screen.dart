@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:introduction_screen/introduction_screen.dart';
+import 'package:shoppingapp/screens/homeScreen.dart';
 
 class OnboradingScreen extends StatelessWidget {
 
@@ -43,9 +44,13 @@ class OnboradingScreen extends StatelessWidget {
             
             ),
             decoration: pageDecoration,
-            footer: Padding(padding: EdgeInsets.only(left: 15,right: 15),
+            footer: Padding(padding: EdgeInsets.only(left: 15,right: 15,top: 50),
             child: ElevatedButton(onPressed: 
-            (){}, child: Text("Lets Shop",style: 
+            (){
+              Navigator.push(context, MaterialPageRoute(builder: (context)=>
+              Homescreen(),
+              ));
+            }, child: Text("Lets Shop",style: 
             TextStyle(color: Colors.white,fontSize: 18),),
             style: ElevatedButton.styleFrom(
               minimumSize:Size.fromHeight(55),
@@ -69,14 +74,6 @@ class OnboradingScreen extends StatelessWidget {
           fontWeight: FontWeight.w600,
           color: Color(0xFFEF6969)
         ),),
-        //   done: Text("Done",style: TextStyle(
-        //   fontWeight: FontWeight.w600,
-        //   color: Color(0xFFEF6969)
-        // ),),
-        // skip:  Text("Skip",style: TextStyle(
-        //   fontWeight: FontWeight.w600,
-        //   color: Color(0xFFEF6969)
-        // ),),
         onDone:(){
 
         } ,
