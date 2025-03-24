@@ -1,6 +1,7 @@
 import 'package:fan_carousel_image_slider/fan_carousel_image_slider.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_rating_bar/flutter_rating_bar.dart';
+import 'package:shoppingapp/widgets/product_details_popup.dart';
 
 class ProductDetailScreen extends StatelessWidget {
   final String image;
@@ -109,9 +110,12 @@ class ProductDetailScreen extends StatelessWidget {
                   child: Center(
                     child: Icon(Icons.shopping_cart,color: Colors.red,),
                   ),
-                )
+                ),
+                  ProductDetailsPopup(),
               ],
-            )
+            ),
+          
+            
           ],
         ),
       )),
